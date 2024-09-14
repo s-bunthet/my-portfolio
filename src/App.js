@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <div className="container">
-              <!-- Header section -->
+              {/*Header section */}
               <section className="header">
                   <div>
                       <span className="name">Bunthet<span className="red">.</span></span>
@@ -23,7 +23,7 @@ function App() {
               </section>
 
 
-              <!-- Experience and Skills section -->
+              {/*Experience and Skills section*/}
               <section className="experience-containter">
                   <div className="box1_1"></div>
                   <div className="experience">
@@ -71,7 +71,7 @@ function App() {
                   <div className="box2_4"></div>
               </section>
 
-              <!-- Quote section -->
+              {/*Quote section*/}
               <section className="quote">
                   <p>“Rien n'est à craindre, tout est à comprendre!”</p>
               </section>
@@ -102,17 +102,6 @@ function App() {
                   </path>
               </svg>
 
-
-              <!-- Contact section -->
-              <!--    <section class="contact">-->
-              <!--        <h3>Let's get in touch.</h3>-->
-              <!--        <form>-->
-              <!--            <input type="text" name="name" placeholder="Name" required>-->
-              <!--            <input type="email" name="email" placeholder="Email" required>-->
-              <!--            <textarea name="message" placeholder="Your message here" required></textarea>-->
-              <!--            <button type="submit">Go</button>-->
-              <!--        </form>-->
-              <!--    </section>-->
           </div>
       </header>
     </div>
