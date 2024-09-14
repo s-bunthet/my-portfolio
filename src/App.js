@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -10,12 +9,16 @@ function App() {
               <section className="header">
                   <div>
                       <span className="name">Bunthet<span className="red">.</span></span>
-                      <a href="https://www.linkedin.com/in/say-bunthet-518318154/"><img src="images/linkedin.png"
-                                                                                        alt="Linkedin"
-                                                                                        className="linkedin"/></a>
+                      <a href="https://www.linkedin.com/in/say-bunthet-518318154/">
+                          <img src="images/linkedin.png"
+                               alt="Linkedin"
+                               className="linkedin"/>
+                      </a>
                       <img src="images/profile.png" alt="Profile Photo" className="profile-image"/>
-                      <a href="https://github.com/s-bunthet/"><img src="images/github.webp" alt="Github"
-                                                                   className="github"/></a>
+                      <a href="https://github.com/s-bunthet/">
+                          <img src="images/github.webp" alt="Github"
+                               className="github"/>
+                      </a>
                       <h2>Software Engineer/Project Manager</h2>
                       <p>Engineering Degree from <span className="blue">EN</span><span className="white">STA</span>
                           <span className="red">Paris</span></p>
