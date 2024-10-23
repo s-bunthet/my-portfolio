@@ -16,8 +16,8 @@ function App() {
   return (
       <Router>
               <Switch>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/random-image" component={RandomImage} />
+                  <Route exact path="/my-portfolio/" component={Home} />
+                  <Route path="/my-portfolio/random-image" component={RandomImage} />
               </Switch>
       </Router>
   );
