@@ -1,0 +1,327 @@
+/*.container {*/
+/*    max-width: 1020px;*/
+/*    margin: 0 auto;*/
+/*    padding: 20px;*/
+/*    font-family: Roboto, sans-serif;*/
+/*    font-weight: 400;*/
+/*    color: white;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    align-content: center;*/
+/*    min-height: 100vh;*/
+/*    !*border: 1px solid green;*!*/
+
+/*}*/
+
+/*section{*/
+/*    width: 100%;*/
+/*    !*border: 1px solid green;*!*/
+/*}*/
+
+/*p {*/
+/*    font-family: Roboto, sans-serif;*/
+/*}*/
+
+/*!*--------------*!*/
+/*!*header section*!*/
+/*!*--------------*!*/
+/*.header {*/
+/*    display: flex;*/
+/*    text-align: center;*/
+/*    justify-content: center;*/
+/*    padding: 10px 0;*/
+/*    min-height: 200px;*/
+/*    position: relative;*/
+
+/*    .name {*/
+/*        !*border: 1px solid green;*!*/
+/*        font-size: 1.5rem;*/
+/*        color: #34ebc3;*/
+/*        font-weight: 500;*/
+/*        position: relative;*/
+/*        padding-bottom: 0;*/
+/*        backdrop-filter: blur(1.5rem);*/
+/*        background-color: #100d42;*/
+
+/*    }*/
+
+/*    .profile-image {*/
+/*        width: 100%;*/
+/*        max-width: 150px;*/
+/*        height:auto;*/
+/*        border-radius: 10%;*/
+/*        text-align: center;*/
+/*        !*border: 1px solid green;*!*/
+/*    }*/
+
+/*}*/
+
+
+
+
+/*.linkedin {*/
+/*    !*border: 1px solid red;*!*/
+/*    backdrop-filter: blur(100%);*/
+/*    background-color: #100d42;*/
+/*    position: absolute;*/
+/*    bottom: 20px;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.linkedin:hover{*/
+/*    transform:  scale(1.1);*/
+/*}*/
+
+/*.github {*/
+/*    !*border: 1px solid yellow;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    backdrop-filter: blur(100%);*/
+/*    background-color: #100d42;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.github:hover{*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+
+/*!*-----*!*/
+/*!*title*!*/
+/*!*-----*!*/
+/*.title{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: flex-start;*/
+/*    text-align: center;*/
+/*    padding: 10px 0;*/
+/*    min-height: 100px;*/
+/*}*/
+
+/*.title h2 {*/
+/*    font-size: 35px;*/
+/*    color: #F01313;*/
+/*    font-family: Cascadia, serif;*/
+/*    text-shadow: 0 2px 0 rgba(240, 19, 19, 1);*/
+/*    font-weight: 300;*/
+/*    line-height: 40px;*/
+/*}*/
+
+/*.title p {*/
+/*    font-size: 1.2rem;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.red{*/
+/*    color: #F01313;*/
+/*}*/
+/*.blue{*/
+/*    color: rgba(10, 48, 249, 1);*/
+/*}*/
+/*.white{*/
+/*    color: white;*/
+/*}*/
+
+
+/*!*----------*!*/
+/*!*experience*!*/
+/*!*----------*!*/
+
+/*.experience {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*    align-items: flex-start;*/
+/*    flex-wrap: wrap;*/
+/*    max-width: 1000px;*/
+/*}*/
+
+/*.experience-header{*/
+/*    margin-bottom: 1em;*/
+/*}*/
+
+/*!*------*!*/
+/*!*skills*!*/
+/*!*------*!*/
+
+/*.skills {*/
+/*    display: flex;*/
+/*    !*justify-content: space-between;*!*/
+/*    max-width: 1000px;*/
+/*    padding: 50px 0;*/
+/*    flex-wrap: wrap;*/
+
+/*    .technologies{*/
+/*        width: 100px;*/
+/*        !*border: 1px solid yellow;*!*/
+
+/*        .tech-list {*/
+/*            display: flex;*/
+/*            flex-wrap: wrap;*/
+/*            width: 80%;*/
+
+/*            span {*/
+/*                background-color: rgba(54, 46, 146, 0.43);*/
+/*                padding: 5px 10px;*/
+/*                margin: 5px;*/
+/*                border-radius: 15px;*/
+/*                font-size: 1rem;*/
+/*                margin-left: 0;*/
+/*            }*/
+/*        }*/
+/*    }*/
+
+/*    .languages{*/
+/*        width: 100px;*/
+/*        !*border: 1px solid cornflowerblue;*!*/
+
+/*        span.lang {*/
+/*            display: inline-block;*/
+/*            background-color: rgba(54, 46, 146, 0.43);*/
+/*            padding: 5px 10px;*/
+/*            margin: 5px;*/
+/*            border-radius: 15px;*/
+/*            font-size: 1rem;*/
+/*            margin-left: 0;*/
+/*            max-width: 400px;*/
+/*        }*/
+/*    }*/
+
+/*}*/
+
+/*!*------*!*/
+/*!*quotes*!*/
+/*!*------*!*/
+
+/*.quote {*/
+/*    text-align: center;*/
+/*    font-size: 1.5rem;*/
+/*    font-style: italic;*/
+/*    color: #f0e130;*/
+/*}*/
+
+
+/*!*contact*!*/
+
+/*.contact {*/
+/*    text-align: center;*/
+/*}*/
+
+/*.contact h3 {*/
+/*    font-size: 1.8rem;*/
+/*    color: #34ebc3;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    border: 0;*/
+/*}*/
+
+/*.contact form {*/
+/*    display: inline-block;*/
+/*    width: 60%;*/
+/*}*/
+
+/*.contact input, .contact textarea {*/
+/*    width: 100%;*/
+/*    padding: 10px;*/
+/*    margin: 10px 0;*/
+/*    border-radius: 5px;*/
+/*    border: none;*/
+/*}*/
+
+/*.contact button {*/
+/*    padding: 10px 20px;*/
+/*    background-color: #34ebc3;*/
+/*    color: #000;*/
+/*    font-size: 1.2rem;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.contact button:hover {*/
+/*    background-color: #2bbca1;*/
+/*}*/
+
+/*!*general*!*/
+/*.rainbow-color{*/
+/*    background: linear-gradient(*/
+/*            90deg,*/
+/*            rgba(28, 245, 206, 0.8) -15.93%,*/
+/*            rgba(248, 7, 50, 0.8) 93.16%);*/
+/*    -webkit-background-clip: text;*/
+/*    background-clip: text;*/
+/*    color: transparent;*/
+/*    font-size: 2rem;*/
+/*    font-family: Bakbak One;*/
+/*    font-weight: bold;*/
+/*}*/
+
+
+/*span.bold{*/
+/*    font-weight: bold;*/
+/*    font-family: Bakbak One;*/
+/*    color: #34ebc3;*/
+/*    font-size: 1.2rem;*/
+/*}*/
+
+
+/*svg{*/
+/*    position: absolute;*/
+/*    position: absolute;*/
+/*    top: -2%;*/
+/*    left: 37%;*/
+/*    width: 30%;*/
+/*    height: 30%;*/
+/*    z-index: -1;*/
+/*}*/
+
+
+.github {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top:2rem;
+    transition: transform 0.3s ease;
+}
+
+.github:hover{
+    transform: scale(1.1);
+}
+
+.linkedin {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    bottom: 2rem;
+    left: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.linkedin:hover{
+    transform:  scale(1.1);
+}
+
+.red{
+    color: #F01313;
+}
+.blue{
+    color: rgba(10, 48, 249, 1);
+}
+.white{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+

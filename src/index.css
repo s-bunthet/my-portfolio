@@ -2,16 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #100d42;
-  color: #fff;
-  line-height: 1.6;
-  background: linear-gradient(to right, black 0.1%, #100d42 25%, #100d42 75%, black 99.99%);
-}
+/*body {*/
+/*  background: linear-gradient(to right, black 0.1%, #100d42 25%, #100d42 75%, black 99.99%);*/
+/*}*/
 
 
 

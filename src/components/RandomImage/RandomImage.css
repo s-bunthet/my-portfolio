@@ -1,0 +1,11 @@
+.randomImage
+{
+    border: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
