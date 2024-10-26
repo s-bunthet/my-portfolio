@@ -1,8 +1,11 @@
-import "./Home.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "./Home.scss" ;
 import linkedin from "../../images/linkedin.png";
 import profile from "../../images/profile.png";
 import github from "../../images/github.webp";
 import pdf_assistant from "../../images/pdf_assistant.png";
+import sun from "../../images/sun.png";
+import moon from "../../images/moon.png";
 import RandomImage from "../RandomImage/RandomImage";
 import {Link} from "react-router-dom";
 import Container from 'react-bootstrap/Container';
@@ -10,14 +13,45 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import Card from 'react-bootstrap/Card';
-import React from 'react';
-import "bootstrap/dist/css/bootstrap.css";
-import {Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Button, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import React, {useState} from "react";
 
 const Home=()=>{
+
+    // hook to handle dark/light mode
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setIsDarkMode((prevMode) => !prevMode);
+        const htmlElement = document.querySelector('html');
+        htmlElement.setAttribute('data-bs-theme',
+            isDarkMode ? 'dark' : 'light');
+    };
+
+    // some variables
+    const linkedinUrl = "https://www.linkedin.com/in/say-bunthet-518318154/";
+    const githubUrl = "https://github.com/s-bunthet/";
+
+    // list technologies
+    const technologies = ['Java','Php','JavaScript','Python','C#','Spring','Zend','Microsoft .Net','Symfony','Apache','Linux','MySQL','PostgreSQL','AI & Machine Learning'];
+    const listTechs = [];
+
+    for (const [i, technologie] of technologies.entries()) {
+        listTechs.push(<Badge pill bg="primary" className="m-1">{technologie}</Badge>)
+    }
+
+    // list languages
+    const languages = ['Khmer','French','English'];
+    const listLanguages = [];
+
+    for (const [i, l] of languages.entries()) {
+        listLanguages.push(<Badge pill bg="primary" className="m-1">{l}</Badge>)
+    }
+
+
     return (
 
-        <Container fluid="md" className="px-4">
+        <Container fluid="md" className={`px-4`} >
             <Navbar expand="lg"  >
                 <Container className="justify-content-around">
                     <Navbar.Brand href="#home" >Mr.B</Navbar.Brand>
@@ -26,17 +60,27 @@ const Home=()=>{
                         <Nav className="ms-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#link">Link</Nav.Link>
+                            <Nav.Link href="#link">
+                                <div>
+                                    <input type="checkbox" className="checkbox" id="checkbox" onClick={toggleDarkMode}/>
+                                    <label htmlFor="checkbox" className="checkbox-label">
+                                        <i><img src={sun} className={`sun`}/></i>
+                                        <i><img src={moon} className={`moon`}/></i>
+                                        <span className="ball"></span>
+                                    </label>
+                                </div>
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <Row className="justify-content-center" >
+            <Row className="justify-content-center">
                 <Col className="text-center mb-4">
-                    <a href="https://www.linkedin.com/in/say-bunthet-518318154/">
+                    <a href={linkedinUrl}>
                         <img src={linkedin} alt="Linkedin" className="linkedin"/>
                     </a>
                     <img src={profile} alt="Profile Photo"/>
-                    <a href="https://github.com/s-bunthet/">
+                    <a href={githubUrl}>
                          <img src={github} alt="Github" className="github"/>
                      </a>
                 </Col>
@@ -44,7 +88,7 @@ const Home=()=>{
             <Row className="justify-content-center">
                 <Col md={8} className="text-center mb-4">
                     <h1>Software Engineer/Project Manager</h1>
-                    <p>Engineering Degree from <span className="blue">EN</span><span className="white">STA</span>
+                    <p>Engineering Degree from <span className="blue ">EN</span><span className="white">STA</span>
                         <span className="red">Paris</span></p>
                 </Col>
             </Row>
@@ -60,26 +104,11 @@ const Home=()=>{
             <Row className="justify-content-center">
                 <Col md={4} className="pe-md-5 ps-0 mb-4">
                     <h2>Technologies</h2>
-                     <Badge pill bg="primary" className="m-1">Java</Badge>
-                     <Badge pill bg="primary" className="m-1">Php</Badge>
-                     <Badge pill bg="primary" className="m-1">JavaScript</Badge>
-                     <Badge pill bg="primary" className="m-1">Python</Badge>
-                     <Badge pill bg="primary" className="m-1">C#</Badge>
-                     <Badge pill bg="primary" className="m-1">Spring</Badge>
-                     <Badge pill bg="primary" className="m-1">Zend</Badge>
-                     <Badge pill bg="primary" className="m-1">Microsoft .Net</Badge>
-                     <Badge pill bg="primary" className="m-1">Symfony</Badge>
-                     <Badge pill bg="primary" className="m-1">Apache</Badge>
-                     <Badge pill bg="primary" className="m-1">Linux</Badge>
-                     <Badge pill bg="primary" className="m-1">MySQL</Badge>
-                     <Badge pill bg="primary" className="m-1">PostgreSQL</Badge>
-                     <Badge pill bg="primary" className="m-1">AI & Machine Learning</Badge>
+                    {listTechs}
                 </Col>
                 <Col md={4} className="ps-0 mb-4">
                     <h2>Languages</h2>
-                    <Badge pill bg="primary" className="m-1">Khmer</Badge>
-                    <Badge pill bg="primary" className="m-1">French</Badge>
-                    <Badge pill bg="primary" className="m-1">English</Badge>
+                    {listLanguages}
                 </Col>
             </Row>
 
